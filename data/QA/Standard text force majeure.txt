@@ -1,0 +1,7 @@
+Standard force majeure text, if a student decides to go to the BoE:
+
+In that case, email dacs-boe@maastrichtuniversity.nl with me in CC. Please prepare your case in detail. Don’t was the BoE’s time. You need to mention the following:
+- Name, program (DSAI or CS), course, group number.
+- Which sessions on what dates you will miss.
+- Why you miss them + sufficient proof (document/scans/doctor’s note, etc.)
+- Confirmation that you will still support your team online and that you’re committed to the project.
