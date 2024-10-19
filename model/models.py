@@ -10,7 +10,7 @@ from langchain.chains.llm import LLMChain
 from langchain_core.documents.base import Document
 from langchain_core.output_parsers import BaseOutputParser
 from langchain_core.output_parsers import StrOutputParser
-from langchain_core.pydantic_v1 import BaseModel, Field
+from pydantic import BaseModel, Field
 from langchain_google_community.vertex_rank import VertexAIRank
 from model.raw_data import documents
 from model.utils.instructionPromt import *
@@ -555,7 +555,7 @@ class Agent:
 class ClarificationModel:
     def __init__(self):
         # LLM with function call
-        llm = ChatOpenAI(model="gpt-3.5-turbo-0125", temperature=0, openai_api_key=Config.OPENAI_API_KEY)
+        llm = ChatOpenAI(model="gpt-4o-mini", temperature=0, openai_api_key=Config.OPENAI_API_KEY)
         # Prompt
         system = (
                 "You are a clarification model. Your task is to generate questions of the given user "
@@ -589,7 +589,7 @@ class GradeHallucinations(BaseModel):
 class HallucinationsModel:
     def __init__(self):
         # LLM with function call
-        llm = ChatOpenAI(model="gpt-3.5-turbo-0125", temperature=0, openai_api_key=Config.OPENAI_API_KEY)
+        llm = ChatOpenAI(model="gpt-4o-mini", temperature=0, openai_api_key=Config.OPENAI_API_KEY)
         structured_llm_grader = llm.with_structured_output(GradeHallucinations)
         # Prompt
         system = """You are a grader assessing whether an LLM generation is grounded in / supported by a set of retrieved facts. \n 
@@ -617,7 +617,7 @@ class GradeAnswer(BaseModel):
 class GradeModel:
     def __init__(self):
         # LLM with function call
-        llm = ChatOpenAI(model="gpt-3.5-turbo-0125", temperature=0, openai_api_key=Config.OPENAI_API_KEY)
+        llm = ChatOpenAI(model="gpt-4o-mini", temperature=0, openai_api_key=Config.OPENAI_API_KEY)
         structured_llm_grader = llm.with_structured_output(GradeAnswer)
         system = """You are a grader assessing whether an answer addresses / resolves a question \n 
         Give a binary score 'yes' or 'no'. Yes' means that the answer resolves the question."""
@@ -637,7 +637,7 @@ class GradeModel:
 class RewriteModel:
     def __init__(self):
         # LLM with function call
-        llm = ChatOpenAI(model="gpt-3.5-turbo-0125", temperature=0, openai_api_key=Config.OPENAI_API_KEY)
+        llm = ChatOpenAI(model="gpt-4o-mini", temperature=0, openai_api_key=Config.OPENAI_API_KEY)
         system = """You are question re-writer that converts an input question to a better version that is optimized \n 
      for vectorstore retrieval. Look at the input and try to reason about the underlying semantic intent / meaning."""
         re_write_prompt = ChatPromptTemplate.from_messages(

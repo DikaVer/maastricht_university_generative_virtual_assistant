@@ -65,7 +65,7 @@ def get_llm_model(llm_model,
         if top_k is not None:
             # Print a warning message
             print("Warning: top_k is not supported in OpenAI models. Ignoring the parameter.")
-        return ChatOpenAI(model="gpt-3.5-turbo-0125",
+        return ChatOpenAI(model="gpt-4o-mini",
                           temperature=temperature,
                           max_tokens=max_tokens,
                           model_kwargs={

@@ -36,8 +36,7 @@ pip install -r requirements.txt
 
 ![VA Pipeline](image/VA_arc.png)
 Figure 1: The VA architecture consists of retrieval, generation, and self-reflection
-parts. Retrieval ① collects the relevant information to the user question. Gen-
-eration ② processes the retrieval information and structures it to generate the
+parts. Retrieval ① collects the relevant information to the user question. Generation ② processes the retrieval information and structures it to generate the
 response. Self-reflection ③ is the fallback mechanism that ensures the correctness
 of the response and understanding of the user question.
 
@@ -74,6 +73,7 @@ to efficiently retrieve relevant information from a corpus of documents.
 and ensuring a broader range of relevant documents. This approach leverages
 LLMs to create alternative queries, improving the accuracy and comprehensiveness
 of the VA’s responses by considering diverse and contextually relevant documents.
+
 
 Prompt:
 ```
@@ -178,7 +178,8 @@ by the VA to obtain accuracy and relevance. Here’s how it functions:
 does not directly address the user’s query, the process includes a mechanism
 to rewrite the query. This might involve rephrasing, correcting, or breaking
 down the question into more manageable parts to better match the available
-data.
+data. By rephrasing the question, the VA can better match the query with relevant documents 
+in the database, leading to more accurate responses.
 
 
 System Prompt:
@@ -203,7 +204,9 @@ different approach might be needed such as clarification questions.
 
 – **Clarification Questions 3.3:** If necessary, the system can pose clarification
 questions to the user. This step is especially important when the query is
-ambiguous or lacks specific details needed for an accurate response.
+ambiguous or lacks specific details needed for an accurate response. By engaging the 
+user in a dialogue, the VA can gather additional information to better address the 
+user's needs.
 
 System Prompt:
 ```
@@ -227,13 +230,17 @@ User:
 Clarification questions:
 ```
 
-– **Hallucinations 3.4** and **Answer Check 3.5:** This involves checking whether the
-generated responses include hallucinated information, which is a common
-issue with generative models, and whether the answer is grounded in facts
-by using Generative LLM as Decision Maker in both cases. Ensuring that
-the content is factual and relevant is crucial for maintaining the reliability of the VA.
+– **Hallucinations 3.4:**  Hallucination detection is important to ensure that the VA's 
+responses are accurate and based on the retrieved information. Generative models can sometimes 
+produce plausible-sounding but incorrect or confabulate content, known as hallucinations. To 
+mitigate this, the VA employs a Generative LLM as a decision-maker to evaluate the generated 
+answer against the retrieved documents.
 
-**Hallucinations 3.4 Prompt**
+The hallucination detection mechanism works by comparing the response to the set of facts 
+obtained during the retrieval phase. The Generative LLM uses a specific prompt to determine
+whether the answer is grounded in the provided facts. If the LLM determines that the answer 
+contains information not supported by facts, it requests Generative LLM 2.1 to regenerate the
+response until the Hallucination Check produces a satisfactory result.
 
 System Prompt:
 ```
@@ -250,7 +257,10 @@ Set of facts:
 LLM generation: {generation}
 ```
 
-**Answer Check 3.5 Prompt**
+**Answer Check 3.5:** This involves verifying whether the generated response adequately addresses
+the user's question. The system employs a Generative LLM as a decision-maker to determine if the 
+answer resolves the query. If the answer is found lacking, the system may trigger the query rewriting 
+mechanism or ask for clarification from the user.
 
 System Prompt:
 ```
