@@ -283,6 +283,10 @@ LLM generation: {generation}
 - In which program are you enrolled? (Computer Science or Data Science & AI)
 - What year are you currently in? (Year 1, 2, or 3)
 - Have you ever read rules and regulations? (Yes or No)
+- Do you know how many project meetings you can skip for each phase? Provide an explanation of the allowed absences per phase.
+- Do you know what constitutes a case of force majeure to miss a project meeting or a skill class? Define force majeure and provide examples that are considered valid.
+
+The survey revealed varied levels of understanding among participants regarding the rules for skipping project meetings. However, based on the responses, the groups showed similar prior knowledge based on the last three questions.
 ---
 ### Scenarios
 
