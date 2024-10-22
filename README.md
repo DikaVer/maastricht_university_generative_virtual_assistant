@@ -34,7 +34,7 @@ pip install -r requirements.txt
 
 ## Methods
 
-![VA Pipeline](image/VA_arc.png)
+![VA Pipeline](images/VA_arc.png)
 Figure 1: The VA architecture consists of retrieval, generation, and self-reflection
 parts. Retrieval ① collects the relevant information to the user question. Generation ② processes the retrieval information and structures it to generate the
 response. Self-reflection ③ is the fallback mechanism that ensures the correctness
@@ -108,7 +108,7 @@ RRF is given by:
 
 
 <p align="center">
-  <img src="image/RRF_formula.png" alt="RRF score">
+  <img src="images/RRF_formula.png" alt="RRF score">
 </p>
 
 
@@ -286,7 +286,8 @@ LLM generation: {generation}
 - Do you know how many project meetings you can skip for each phase? Provide an explanation of the allowed absences per phase.
 - Do you know what constitutes a case of force majeure to miss a project meeting or a skill class? Define force majeure and provide examples that are considered valid.
 
-The survey revealed varied levels of understanding among participants regarding the rules for skipping project meetings. However, based on the responses, the groups showed similar prior knowledge based on the last three questions.
+***The survey revealed varied levels of understanding among participants regarding the rules for skipping project meetings. However, based on the responses, the groups showed similar prior knowledge based on the last three questions.***
+
 ---
 ### Scenarios
 
@@ -367,7 +368,7 @@ Figure 1 shows the results of questions that were asked regarding the general in
 
 The chart indicates that most participants are enrolled in the Data Science & AI program, with 54 students in their first year, 6 in their second year, and 3 in their third year. Additionally, 35 students reported having read the rules and regulations, while 29 had not.
 
-![Distribution of student responses regarding their enrolled program, current year of study, and familiarity with the rules and regulations.](image/basic_questions_plots.png)
+![Distribution of student responses regarding their enrolled program, current year of study, and familiarity with the rules and regulations.](images/basic_questions_plots.png)
 
 ---
 ## Open-ended Feedback from Students
