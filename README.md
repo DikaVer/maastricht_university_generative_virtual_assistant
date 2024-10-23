@@ -286,7 +286,35 @@ LLM generation: {generation}
 - Do you know how many project meetings you can skip for each phase? Provide an explanation of the allowed absences per phase.
 - Do you know what constitutes a case of force majeure to miss a project meeting or a skill class? Define force majeure and provide examples that are considered valid.
 
-***The survey revealed varied levels of understanding among participants regarding the rules for skipping project meetings. However, based on the responses, the groups showed similar prior knowledge based on the last three questions.***
+***The survey revealed varied levels of understanding among participants regarding the rules for skipping project meetings. However, based on responses, both groups demonstrated similar prior knowledge. This suggests that misunderstandings about the rules and regulations were widespread and not confined to any particular group.***
+
+A detailed response overview is for these questions is presented below:
+- Reading rules and regulations:
+
+  | Group | Replied "Yes" | Replied "No" | Total |
+  |-------|---------------|--------------|-------|
+  | A     | 20            | 14           | 34    |
+  | B     | 15            | 15           | 30    |
+
+<br/>
+
+- Correctly stating how many meetings can be missed:
+
+  | Group | Correct replies | Incorrect replies | Admitted to not know | Total |
+  |-------|-----------------|-------------------|----------------------|-------|
+  | A     | 4               | 29                | 1                    | 34    |
+  | B     | 3               | 23                | 4                    | 30    |
+
+  - Note: Group B had more people that admitted not knowing how many project meetings they could miss, but that resulted in fewer wrong answers
+
+<br/>
+
+- Correctly stating what force majeure is or giving a correct example:
+
+  | Group | Correct replies | Incorrect replies | Admitted to not know | Total |
+  |-------|-----------------|-------------------|----------------------|-------|
+  | A     | 13              | 8                 | 13                   | 34    |
+  | B     | 14              | 6                 | 10                   | 30    |
 
 ---
 ### Scenarios
