@@ -1,7 +1,11 @@
 <h1><p align="center">Generative AI-Based Virtual Assistant Using Retrieval-Augmented Generation:
 An evaluation study for bachelor projects</p></h1>
 
-[![Watch the video](https://img.youtube.com/vi/jXC7-cPD4Z4/0.jpg)](https://youtu.be/jXC7-cPD4Z4)
+<div align="center">
+  <a href="https://youtu.be/jXC7-cPD4Z4">
+    <img src="https://img.youtube.com/vi/jXC7-cPD4Z4/0.jpg" alt="Watch the video" />
+  </a>
+</div>
 
 ## Abstart
 Large Language Models have been increasingly employed
