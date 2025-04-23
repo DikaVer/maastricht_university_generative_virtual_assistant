@@ -1,6 +1,8 @@
 <h1><p align="center">Generative AI-Based Virtual Assistant Using Retrieval-Augmented Generation:
 An evaluation study for bachelor projects</p></h1>
 
+[![Watch the video](https://img.youtube.com/vi/jXC7-cPD4Z4/0.jpg)](https://youtu.be/jXC7-cPD4Z4)
+
 ## Abstart
 Large Language Models have been increasingly employed
 in the creation of Virtual Assistants due to their ability to generate
