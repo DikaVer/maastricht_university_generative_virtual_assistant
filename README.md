@@ -3,7 +3,7 @@ An evaluation study for bachelor projects</p></h1>
 
 <div align="center">
   <a href="https://youtu.be/SoocnKf881s">
-    <img src="https://img.youtube.com/vi/jXC7-cPD4Z4/0.jpg" alt="Watch the video" />
+    <img src="https://img.youtube.com/vi/SoocnKf881s/maxresdefault.jpg" alt="Watch the video" />
   </a>
 </div>
 
